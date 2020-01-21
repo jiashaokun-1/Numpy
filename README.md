@@ -1,2 +1,2 @@
 # Numpy
-Numpy的学习笔记
+> + Numpy中的'Array'是一个强大的N维数组对象
