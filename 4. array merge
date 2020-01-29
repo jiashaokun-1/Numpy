@@ -1,0 +1,15 @@
+## 合并
+vertical stack上下合并
+```
+numpy.vstack((ArrayA, ArrayB)) # 参数为tuple， 其中包含两个array
+```
+horizontal stack左右合并
+```
+numpy.hstack((ArrayA, ArrayB)) # 参数为tuple
+```
+## 一维Array数组通过`numpy.newaxis`属性转为多维矩阵
+```
+A = numpy.array([1, 1, 1])
+A[numpy.newaxis, :] # 将[1, 1, 1]变为[[1, 1, 1]], 即shape由(3,)转为(1, 3)
+A[:, numpy.newaxis] # 将[1, 1, 1]变为[[1], [1], [1]], 即shape由(3,)变为(3,1)
+```
